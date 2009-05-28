@@ -9,8 +9,7 @@ The reasons for using HTML 4.01 Strict instead of XHTML 1.0 Transitional or XHTM
 
 * The W3C currently recommends serving web page documents as HTML 4.01 Strict, due to several probelsm with XHTML.
 
-* Most web servers serve XHTML documents as <tt>text/html</tt> rather than <tt>application/xhtml+xml</tt>.  
-This is because, unfortunately, Microsoft Internet Explorer 6, 7, and 8 cannot accept the media type <tt>application/xhtml+xml</tt>.  
+* Most web servers serve XHTML documents as <tt>text/html</tt> rather than <tt>application/xhtml+xml</tt>.   This is often done because, unfortunately, Microsoft Internet Explorer 6, 7, and 8 cannot accept the media type <tt>application/xhtml+xml</tt>.  
 
 * When you serve your XHTML syntax based documents as text/html they will be treated as HTML by the browser. The browser sees tag soup, and has to fix it on the fly. Even though your document is valid, it doesn't matter to the browser. This wastes users' time.
 

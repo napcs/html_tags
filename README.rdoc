@@ -41,6 +41,6 @@ The helpers are overridden to generate appropriate HTML syntax. Generally, this 
 
 I haven't created tests for every possible tag case yet, but we have a start.
 
-I'm also a little unconfortable with the way this hacks the internals of Rails. I'll keep looking for better ways.
+I'm also a little uncomfortable with the way this hacks the internals of Rails. I'll keep looking for better ways. Please fork, patch, and send back!
 
 Copyright (c) 2009 Brian Hogan, released under the MIT license

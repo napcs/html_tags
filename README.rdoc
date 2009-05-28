@@ -1,0 +1,12 @@
+= html4_tags
+
+Makes Rails helpers generate tags in HTML4 syntax 
+instead of the XHTML 1.0 syntax it uses. 
+
+Very much a work in progress. 
+
+== Issues
+
+No tests yet. They are coming.
+
+Copyright (c) 2009 Brian Hogan, released under the MIT license

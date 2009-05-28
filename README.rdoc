@@ -1,6 +1,6 @@
-= html4_tags
+= html_tags
 
-Makes Rails helpers generate tags in HTML4 syntax 
+Makes Rails helpers generate tags in HTML syntax 
 instead of the XHTML 1.0 syntax it uses. 
 
 Very much a work in progress. 

@@ -1,2 +1,2 @@
 # Include hook code here
-require 'html4_tags'
+require 'html_tags'

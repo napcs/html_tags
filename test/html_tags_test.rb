@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Html4TagsTest < ActiveSupport::TestCase
+class HtmlTagsTest < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true

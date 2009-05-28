@@ -3,10 +3,14 @@
 Makes Rails helpers generate tags in HTML syntax 
 instead of the XHTML 1.0 syntax it uses. 
 
-Very much a work in progress. 
+ * <tt>input</tt> no longer self-closes
+ * <tt>img</tt> no longer self-closes
+ * <tt>link</tt> no longer self-closes
 
 == Issues
 
-No tests yet. They are coming.
+I haven't created tests for every possible tag case yet, but we have a start.
+
+I'm also a little unconfortable with the way this hacks the internals of Rails. I'll keep looking for better ways.
 
 Copyright (c) 2009 Brian Hogan, released under the MIT license

@@ -3,6 +3,36 @@
 Makes Rails helpers generate tags in HTML syntax 
 instead of the XHTML 1.0 syntax it uses. 
 
+== Why whould I want to do this?
+
+The reasons for using HTML 4.01 Strict instead of XHTML 1.0 Transitional or XHTML 1.0 Strict are well-documented, but here are some reasons for using HTML:
+
+* The W3C currently recommends serving web page documents as HTML 4.01 Strict, due to several probelsm with XHTML.
+
+* Most web servers serve XHTML documents as <tt>text/html</tt> rather than <tt>application/xhtml+xml</tt>.  
+This is because, unfortunately, Microsoft Internet Explorer 6, 7, and 8 cannot accept the media type <tt>application/xhtml+xml</tt>.  
+
+* When you serve your XHTML syntax based documents as text/html they will be treated as HTML by the browser. The browser sees tag soup, and has to fix it on the fly. Even though your document is valid, it doesn't matter to the browser. This wastes users' time.
+
+XHTML provides no real benefits to those developing web-based applications, and can in some cases create some serious headaches. Solutions like content negotiation, browser detection, etc are unnecessary if you simply serve valid, strict HTML.
+
+This also prepares us for HTML 5, which is quite nice.
+
+=== Further reading
+ * http://hixie.ch/advocacy/xhtml
+ * http://friendlybit.com/html/why-xhtml-is-a-bad-idea/
+ * http://www.alistapart.com/articles/previewofhtml5
+ * http://annevankesteren.nl/2004/06/invalid-html
+ * http://en.wikipedia.org/wiki/Tag_soup
+ * http://www.zeldman.com/2009/05/27/google-bets-big-on-html-5-news-from-google-io-oreilly-radar/
+ 
+== Usage
+Just install the plugin. 
+
+  ruby script/plugin install git://github.com/napcs/html_tags
+
+The helpers are overridden to generate appropriate HTML syntax. Generally, this means no self-closing tags.
+
  * <tt>input</tt> no longer self-closes
  * <tt>img</tt> no longer self-closes
  * <tt>link</tt> no longer self-closes
